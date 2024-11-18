@@ -22,71 +22,38 @@
 
     <main>
         <h2>Latest Songs</h2>
-        <body>
-            <audio id="myAudio" src="sound3.mp3">
-                Your browser does not support the audio element.
-            </audio>
-            <button onclick="playSound()">Play Sound</button>
-        
-            <script>
-                function playSound() {
-                    var audio = document.getElementById('myAudio');
-                    audio.play();
-                }
-            </script>
-        </body>
-        <body>
-            <audio id="myAudio" src="sound1.mp3">
-                Your browser does not support the audio element.
-            </audio>
-            <button onclick="playSound()">Play Sound</button>
-        
-            <script>
-                function playSound() {
-                    var audio = document.getElementById('myAudio');
-                    audio.play();
-                }
-            </script>
-        </body>
-        <body>
-            <audio id="myAudio" src="sound2.mp3">
-                Your browser does not support the audio element.
-            </audio>
-            <button onclick="playSound()">Play Sound</button>
-        
-            <script>
-                function playSound() {
-                    var audio = document.getElementById('myAudio');
-                    audio.play();
-                }
-            </script>
-        </body>
-        <body>
-            <audio id="myAudio" src="sound4.mp3">
-                Your browser does not support the audio element.
-            </audio>
-            <button onclick="playSound()">Play Sound</button>
-        
-            <script>
-                function playSound() {
-                    var audio = document.getElementById('myAudio');
-                    audio.play();
-                }
-            </script>
-        </body>
-        <body>
-            <audio id="myAudio" src="sound5.mp3">
-                Your browser does not support the audio element.
-            </audio>
-            <button onclick="playSound()">Play Sound</button>
-        
-            <script>
-                function playSound() {
-                    var audio = document.getElementById('myAudio');
-                    audio.play();
-                }
-            </script>
-        </body>
+        <audio id="audio1" src="sound3.mp3">
+            Your browser does not support the audio element.
+        </audio>
+        <button onclick="playSound('audio1')">Play Sound 1</button>
+
+        <audio id="audio2" src="sound1.mp3">
+            Your browser does not support the audio element.
+        </audio>
+        <button onclick="playSound('audio2')">Play Sound 2</button>
+
+        <audio id="audio3" src="sound2.mp3">
+            Your browser does not support the audio element.
+        </audio>
+        <button onclick="playSound('audio3')">Play Sound 3</button>
+
+        <audio id="audio4" src="sound4.mp3">
+            Your browser does not support the audio element.
+        </audio>
+        <button onclick="playSound('audio4')">Play Sound 4</button>
+
+        <audio id="audio5" src="sound5.mp3">
+            Your browser does not support the audio element.
+        </audio>
+        <button onclick="playSound('audio5')">Play Sound 5</button>
+
+        <script>
+            function playSound(id) {
+                var audio = document.getElementById(id);
+                audio.play();
+            }
+        </script>
+    </main>
 
     <footer>
         <p>&copy; 2024,The Pet's music Club All rights reserved.</p>
